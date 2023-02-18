@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <link href="js/bootstrap.min.js" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="mainpage d-flex justify-content-center ">
+        <div class="content w-50 h-50 mt-5 text-center">
+            <div class="container py-5 px-5">
+                <h2 class="title">Smart Login System</h2>
+                <div class="inputdiv">
+                <input type="text" placeholder="Enter your name" class="form-control mb-3 mt-3 d-none name" />
+                </div>
+                <input type="email" placeholder="Enter your email" class="form-control mb-3 mt-3 e-mail" />
+                <input type="password" placeholder="Enter your password" class="form-control mb-4 pass" />
+                <button class="btn btn-outline-info w-100 py-2 mb-2" onclick="addEmail()">Login</button>
+                <p class="userMsg"></p>
+                <p class="text-white question d-inline">Don’t have an account? </p>
+                <span class="signup text-white" onclick="displayElements()">SignUp</span>
+
+            </div>
+        </div>
+    </div>
+    <div class="layer vh-100 position-fixed top-0 start-0 end-0 bottom-0 d-none">
+        <div class="up w-100 p-2">
+            <div class="container d-flex justify-content-between">
+                <h4 class="d-inline text-white">SMART LOGIN</h4>
+                <button type="button" class="btn btn-outline-warning " onclick="goBackToMainPage()">logout</button>
+            </div>
+        </div>
+        <div class="welcome position-absolute top-50 start-50 translate-middle w-50 text-center">
+            <h2 class="d-inline">Welcome </h2><h2 class="welcomeName d-inline"></h2>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js" rel="stylesheet"></script>
+    <script src="main.js" rel="stylesheet"></script>
+</body>
+
+</html>
